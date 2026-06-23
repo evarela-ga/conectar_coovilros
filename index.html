@@ -27,6 +27,11 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
 .brand .logo{width:40px;height:40px;border-radius:11px;background:linear-gradient(135deg,var(--cyan),var(--blue));display:flex;align-items:center;justify-content:center;font-weight:800;color:#04121f;font-size:18px;box-shadow:0 0 18px rgba(0,212,255,.4)}
 .brand h1{font-size:15px;font-weight:700;letter-spacing:.3px}
 .brand span{font-size:11px;color:var(--muted)}
+.brand{justify-content:flex-start}
+.brandlogo{width:100%;max-width:236px;height:auto;display:block}
+.brandsub{font-size:10.5px;color:var(--muted);letter-spacing:.6px;padding:2px 6px 0;text-transform:uppercase}
+.coverlogo{width:min(360px,74%);height:auto;display:block;margin-bottom:30px;filter:drop-shadow(0 6px 22px rgba(0,212,255,.16))}
+@media print{.coverlogo,.brandlogo *{filter:none}.coverlogo *,.brandlogo *{fill:#0a2a44!important;stroke:#0a2a44!important}.coverlogo text,.brandlogo text{fill:#0a2a44!important}}
 .navlbl{font-size:10.5px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);padding:14px 10px 6px}
 .sidebar a{display:flex;gap:10px;align-items:center;color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:9px;font-size:13.3px;font-weight:500;transition:.18s;border:1px solid transparent}
 .sidebar a .n{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cyan);min-width:22px;opacity:.8}
@@ -130,9 +135,9 @@ footer{border-top:1px solid var(--border);padding:30px 40px;color:var(--muted);f
 <!-- ================= SIDEBAR ================= -->
 <aside class="sidebar">
   <div class="brand">
-    <div class="logo">G</div>
-    <div><h1>GoodApps</h1><span>Análisis de Sistemas</span></div>
+    <svg class="brandlogo" viewBox="0 0 488 120" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" aria-label="GoodApps — Soluciones + Software"><circle cx="60" cy="60" r="50" stroke="#fff" fill="none" stroke-width="11" stroke-dasharray="26 13.27"/><circle cx="60" cy="60" r="35" stroke="#fff" fill="none" stroke-width="8"/><circle cx="60" cy="60" r="21" stroke="#fff" fill="none" stroke-width="7"/><circle cx="60" cy="60" r="8" fill="#fff"/><g stroke-linecap="round" stroke-linejoin="round"><line x1="98" y1="18" x2="69.4" y2="49.6" stroke="#0a0e1a" stroke-width="10"/><polygon points="60,60 75.4,54.0 64.6,43.4" fill="#0a0e1a" stroke="#0a0e1a" stroke-width="6"/><line x1="98" y1="18" x2="69.4" y2="49.6" stroke="#fff" stroke-width="4"/><polygon points="60,60 74.6,54.3 64.2,44.9" fill="#fff"/><path d="M98 18 L88 14 M98 18 L102 8 M93 24 L84 21 M93 24 L97 12" stroke="#fff" stroke-width="3.2"/></g><text x="132" y="72" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="800" letter-spacing="-1" fill="#fff">GoodApps</text><text x="135" y="95" font-family="Inter, Arial, sans-serif" font-size="13.5" font-weight="700" letter-spacing="3.1" fill="#fff">SOLUCIONES + SOFTWARE</text></svg>
   </div>
+  <div class="brandsub">Análisis de Sistemas · Relevamiento</div>
   <div class="navlbl">Informe</div>
   <nav id="nav">
     <a href="#portada"><span class="n">00</span> Portada</a>
@@ -170,6 +175,7 @@ footer{border-top:1px solid var(--border);padding:30px 40px;color:var(--muted);f
   <section id="portada" class="cover">
     <div class="grid-bg"></div>
     <div class="inner">
+      <svg class="coverlogo" viewBox="0 0 488 120" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" aria-label="GoodApps — Soluciones + Software"><circle cx="60" cy="60" r="50" stroke="#fff" fill="none" stroke-width="11" stroke-dasharray="26 13.27"/><circle cx="60" cy="60" r="35" stroke="#fff" fill="none" stroke-width="8"/><circle cx="60" cy="60" r="21" stroke="#fff" fill="none" stroke-width="7"/><circle cx="60" cy="60" r="8" fill="#fff"/><g stroke-linecap="round" stroke-linejoin="round"><line x1="98" y1="18" x2="69.4" y2="49.6" stroke="#0a0e1a" stroke-width="10"/><polygon points="60,60 75.4,54.0 64.6,43.4" fill="#0a0e1a" stroke="#0a0e1a" stroke-width="6"/><line x1="98" y1="18" x2="69.4" y2="49.6" stroke="#fff" stroke-width="4"/><polygon points="60,60 74.6,54.3 64.2,44.9" fill="#fff"/><path d="M98 18 L88 14 M98 18 L102 8 M93 24 L84 21 M93 24 L97 12" stroke="#fff" stroke-width="3.2"/></g><text x="132" y="72" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="800" letter-spacing="-1" fill="#fff">GoodApps</text><text x="135" y="95" font-family="Inter, Arial, sans-serif" font-size="13.5" font-weight="700" letter-spacing="3.1" fill="#fff">SOLUCIONES + SOFTWARE</text></svg>
       <span class="clasif">● CONFIDENCIAL — USO INTERNO</span>
       <h1>Informe Técnico-Ejecutivo de <span class="hl">Relevamiento de Necesidades</span></h1>
       <div class="sub">Plataforma de gestión y analítica de datos de medidores eléctricos (domiciliarios y de media tensión) para la Cooperativa de Servicios Públicos de Villa del Rosario.</div>
